@@ -6,10 +6,27 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const interTight = Inter_Tight({ subsets: ["latin"], variable: "--font-inter-tight", display: "swap", weight: ["500", "600", "700"] });
 const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains", display: "swap" });
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hrcompliance.dev";
+
+const TITLE = "HR Compliance MCP — query US employment law by state";
+const DESCRIPTION =
+  "Open source MCP server covering 50-state employment compliance. 19 tools, 9 states live (incl. Maine LD 54), 42 in pipeline. Paste a job posting and see what it gets wrong.";
+
 export const metadata: Metadata = {
-  title: "HR Compliance MCP — query US employment law by state",
-  description:
-    "Open source MCP server covering 50-state employment compliance. 19 tools, 9 states live, 42 in pipeline. Paste a job posting and see what it gets wrong.",
+  metadataBase: new URL(SITE_URL),
+  title: { default: TITLE, template: "%s · HR Compliance MCP" },
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    siteName: "HR Compliance MCP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
