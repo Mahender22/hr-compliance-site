@@ -66,7 +66,7 @@ export default function McpPage() {
       <section className="mt-16">
         <h2 className="font-display text-2xl font-semibold tracking-tight">Honest limitations</h2>
         <ul className="mt-3 space-y-2 text-[15px] text-ink-soft">
-          <li>· 8 states today. The remaining 42 + DC are on the public roadmap.</li>
+          <li>· 9 states today (CA, NY, CO, WA, MA, IL, NJ, OR, plus Maine — LD 54, effective 2026-07-29). The remaining 41 + DC are on the public roadmap.</li>
           <li>· Federal-only questions return a pointer to DOL, not a synthesized answer.</li>
           <li>· Local ordinances (city/county) are partial — NYC, SF, Seattle, Austin covered first.</li>
           <li>· Data is refreshed monthly. Change-log feed ships with the Pro tier.</li>

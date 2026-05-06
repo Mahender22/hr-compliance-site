@@ -9,7 +9,7 @@ const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrai
 export const metadata: Metadata = {
   title: "HR Compliance MCP — query US employment law by state",
   description:
-    "Open source MCP server covering 50-state employment compliance. 19 tools, 8 states live, 42 in pipeline. Paste a job posting and see what it gets wrong.",
+    "Open source MCP server covering 50-state employment compliance. 19 tools, 9 states live, 42 in pipeline. Paste a job posting and see what it gets wrong.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -36,7 +36,7 @@ function SiteNav() {
           <a href="/states" className="hover:text-ink">States</a>
           <a href="/waitlist" className="hover:text-ink">API</a>
           <a
-            href="https://github.com/"
+            href="https://github.com/Mahender22/hr-compliance-mcp"
             className="rounded-md border border-line px-3 py-1.5 text-[14px] hover:border-ink"
           >
             GitHub
@@ -53,7 +53,7 @@ function SiteFooter() {
       <div className="mx-auto flex max-w-[1120px] flex-col gap-2 px-6 py-10 text-[14px] text-muted sm:flex-row sm:items-center sm:justify-between">
         <div>50-state employment compliance for AI assistants. Open source, MIT.</div>
         <div className="flex gap-6">
-          <a href="https://github.com/" className="hover:text-ink">GitHub</a>
+          <a href="https://github.com/Mahender22/hr-compliance-mcp" className="hover:text-ink">GitHub</a>
           <a href="/states" className="hover:text-ink">Coverage</a>
           <a href="mailto:hi@example.dev" className="hover:text-ink">Contact</a>
         </div>

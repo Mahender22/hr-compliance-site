@@ -99,6 +99,19 @@ export const PAY_TRANSPARENCY: Record<string, PayTransparencyRule> = {
     penalties: "$1,000 per violation",
     citation: "ORS 652.220",
   },
+  // Maine LD 54: signed 2026-04-24, effective 2026-07-29.
+  // Threshold + penalties pending Maine DOL rulemaking — verify before launch.
+  ME: {
+    state: "ME",
+    stateName: "Maine",
+    requiresPosting: true,
+    requiresOnRequest: true,
+    requiresBenefitsDescription: false,
+    employerThreshold: 5,
+    effectiveDate: "2026-07-29",
+    penalties: "Pending Maine DOL rulemaking",
+    citation: "Me. LD 54 (signed 2026-04-24)",
+  },
 };
 
 export const COVERED_STATES = Object.keys(PAY_TRANSPARENCY);

@@ -130,8 +130,9 @@ function Coverage() {
         </a>
       </div>
       <p className="mt-3 max-w-[640px] text-ink-soft">
-        Eight priority states live today. Selection was driven by query volume + pay-transparency
-        law density, not population. The remaining 42 states and DC are on the roadmap.
+        Nine priority states live today, including Maine (LD 54, effective 2026-07-29).
+        Selection was driven by query volume + pay-transparency law density, not population.
+        The remaining 41 states and DC are on the roadmap.
       </p>
       <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
         {Object.values(PAY_TRANSPARENCY).map((r) => (
@@ -167,13 +168,13 @@ function ForDevelopers() {
           </p>
           <ul className="mt-6 space-y-2 text-[15px] text-ink-soft">
             <li>· 19 tools, 2 resources</li>
-            <li>· 63 tests, CI green</li>
+            <li>· 64 tests, CI green</li>
             <li>· MIT licensed</li>
             <li>· No telemetry, no API keys required for MCP tier</li>
           </ul>
           <div className="mt-6">
             <a
-              href="https://github.com/"
+              href="https://github.com/Mahender22/hr-compliance-mcp"
               className="rounded-md border border-line px-4 py-2 text-[14px] hover:border-ink"
             >
               View on GitHub
